@@ -1,0 +1,14 @@
+// 1. Protobuf 버전 선언 (최신 버전인 proto3 권장)
+syntax = "proto3";
+
+// 2. 패키지 이름 정의 (C#의 namespace, Java의 package 역할)
+package Prptp_Player;
+
+// 3. 메시지(Data Structure) 정의
+message PlayerData
+ {
+  int32 user_id = 1;
+  string user_name = 2;
+  int32 level = 3;
+  int32 damage=4; 
+}
