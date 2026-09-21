@@ -81,4 +81,17 @@ id = 1, username = 2에서 숫자 1, 2는 데이터의 값이 아니라 **바이
 
 ---
 # 설치방법
-![대체 텍스트](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/1.png)
+- Nugetforunity 설치  
+![대체 텍스트](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/1.png)  
+![alt text](image.png)
+PackageManager에서 Add Package from git URL..클릭
+클릭 후 아래 링크 로 Nuget 설치
+```
+https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity
+```
+
+![alt text](image-1.png)
+Nuget 클릭 -> Manage Nuget Packages 클릭    
+![alt text](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/4.png)  
+![alt text](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/3.png)  
+Google.protobuf  와 Google.protobuf.Tools 설치
