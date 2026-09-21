@@ -1,5 +1,5 @@
  
- [구현 방법으로 이동](#3-proto-문법-완벽-정리)
+ [문법 정리 ](#.proto-문법-완벽-정리-(Proto3-기준))
  ## protobuf 
  [``]
  Google Protocol Buffers(Protobuf)는 구글이 개발한 구조화된 데이터를 직렬화(Serialization)하는 직관적이고 효율적인 매커니즘입니다.
