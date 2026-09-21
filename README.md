@@ -154,3 +154,26 @@ Nuget 클릭 -> Manage Nuget Packages 클릭
 Google.protobuf  와 Google.protobuf.Tools 설치
 
 이러면 설치가 완료 되었다.
+
+# 사용법
+![alt text](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/5.png)  
+프로젝트에서 폴더에서 Packages폴더 진입   
+![alt text](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/6.png)  
+Google ..폴더 -> tools ->windows x86 클릭    
+![alt text](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/7.png)    
+그러면 protoc.exe 파일이 있는데 해당 위치에서   
+사용할 데이터를 정의해야한다.  
+일단 Text파일을 만든 후 파일을 연다.    
+![alt text](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/8.png)  
+그다음 버전 선언 / 패키지 이름 정의  / 메시지 정의 를 해준다.  
+메시지 정의가 사용할 데이터 타입으로 알고 있으면 되고  
+해당 데이터는 값타입으로 정의가 안되는걸로 알고 있고 클래스로 만들어진다. 다만들었으면 저장하고 확장자를 txt에서 proto로 바꾼다.  
+
+![alt text](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/9.png)     
+![alt text](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/10.png)     
+그리고 해당 폴더에서 cmd를 실행시킨 후 아래와 같은 명령어를 실행한다.  
+```
+protoc --csharp_out=.  (이름).proto
+```
+
+
