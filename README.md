@@ -179,9 +179,7 @@ protoc --csharp_out=.  (이름).proto
 ```  
 ![alt text](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/11.png)   
 하면은 cs 파일이 생성이 되는데 이걸 프로젝트 내부 폴더로 옮긴다.  
-![
-    
-](image-2.png)    
+![alt text](image-2.png)    
 ```
 using PrptpPlayer;
 using System.IO;
