@@ -5,7 +5,7 @@
 - [ JSON / XML과의 차이점](#json--xml과의-차이점-왜-쓸까)
 - [ .proto 문법 완벽 정리](#proto-문법-완벽-정리-proto3-기준)
 - [필드 번호(Tag Number) 주의사항](#필드-번호tag-number-주의사항)
-
+- [설치 방법](#설치방법)
 ---
 
 # Protobuf의 핵심 개념 및 동작 원리
@@ -78,3 +78,7 @@ id = 1, username = 2에서 숫자 1, 2는 데이터의 값이 아니라 **바이
 
 1~15번: 1바이트로 인코딩되므로 자주 사용하는 필드에 할당하는 것이 유리합니다.
 한 번 지정된 필드 번호는 변경하거나 재사용하면 안 됩니다. (하위 호환성 문제)
+
+---
+# 설치방법
+![대체 텍스트](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/1.png)
