@@ -1,4 +1,5 @@
-
+![alt text](image-3.png)  
+protobuf를 사용하면 데이터 압축 크기에 있어서 이득을 볼수 있다.
 ## 목차
 
 - [ Protobuf의 핵심 개념 및 동작 원리](#protobuf의-핵심-개념-및-동작-원리)
@@ -8,6 +9,7 @@
 
 - [필드 번호(Tag Number) 주의사항](#필드-번호tag-number-주의사항)
 - [설치 방법](#설치방법)
+- [사용법](#사용법)
 ---
 
 # Protobuf의 핵심 개념 및 동작 원리
@@ -174,6 +176,42 @@ Google ..폴더 -> tools ->windows x86 클릭
 그리고 해당 폴더에서 cmd를 실행시킨 후 아래와 같은 명령어를 실행한다.  
 ```
 protoc --csharp_out=.  (이름).proto
+```  
+![alt text](https://github.com/SadSmileXD/Protobuf_Test/blob/Google-Protobuf/image/11.png)   
+하면은 cs 파일이 생성이 되는데 이걸 프로젝트 내부 폴더로 옮긴다.  
+![
+    
+](image-2.png)    
+```
+using PrptpPlayer;
+using System.IO;
+using UnityEngine;
+using Google.Protobuf;
+public class Test : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        var data = new PlayerData
+        {
+            Level = 10,
+            UserId = 12345,
+            UserName = "PlayerOne",
+            Damage = 250
+        };
+
+        byte[] bytes;
+        using (MemoryStream stream = new MemoryStream())
+        {
+            data.WriteTo(stream);
+            bytes = stream.ToArray();
+        }
+        Debug.Log($"Serialized Data: {bytes.Length}");
+        var deserializedData = PlayerData.Parser.ParseFrom(bytes);
+        Debug.Log($"Deserialized Data: UserId={deserializedData.UserId}, UserName={deserializedData.UserName}, Level={deserializedData.Level}, Damage={deserializedData.Damage}");
+    }
+}
+
 ```
 
 
